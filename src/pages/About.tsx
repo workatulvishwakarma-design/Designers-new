@@ -35,7 +35,7 @@ const About = () => {
     // Story section
     const storyElements = storyRef.current?.querySelectorAll('.story-reveal');
     if (storyElements) {
-      const trigger = ScrollTrigger.create({
+      ScrollTrigger.create({
         trigger: storyRef.current,
         start: 'top 75%',
         onEnter: () => {
@@ -51,7 +51,7 @@ const About = () => {
     // Values cards
     const valueCards = valuesRef.current?.querySelectorAll('.value-card');
     if (valueCards) {
-      const trigger = ScrollTrigger.create({
+      ScrollTrigger.create({
         trigger: valuesRef.current,
         start: 'top 75%',
         onEnter: () => {
@@ -67,7 +67,7 @@ const About = () => {
     // Team section
     const teamCards = teamRef.current?.querySelectorAll('.team-card');
     if (teamCards) {
-      const trigger = ScrollTrigger.create({
+      ScrollTrigger.create({
         trigger: teamRef.current,
         start: 'top 75%',
         onEnter: () => {
@@ -83,7 +83,7 @@ const About = () => {
     // Milestones
     const milestones = milestonesRef.current?.querySelectorAll('.milestone');
     if (milestones) {
-      const trigger = ScrollTrigger.create({
+      ScrollTrigger.create({
         trigger: milestonesRef.current,
         start: 'top 75%',
         onEnter: () => {
@@ -124,28 +124,7 @@ const About = () => {
     },
   ];
 
-  const team = [
-    {
-      name: 'Vikram Desai',
-      role: 'Founder & CEO',
-      initials: 'VD',
-    },
-    {
-      name: 'Anita Sharma',
-      role: 'Chief Designer',
-      initials: 'AS',
-    },
-    {
-      name: 'Rajiv Khanna',
-      role: 'Master Watchmaker',
-      initials: 'RK',
-    },
-    {
-      name: 'Priya Nair',
-      role: 'Head of Operations',
-      initials: 'PN',
-    },
-  ];
+
 
   const milestones = [
     { year: '1979', title: 'The Genesis', description: 'Nagpal Bombay founded as a specialist in watch components and parts.' },
